@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<ul>
+    <li><a href="#">Contact Us</a></li>
+    <li><a href="#">Home</a></li>
+    <li><a href="#">My Project</a></li>
+</ul>
+<h1>Gautham Asok</h1>
+
+<section class="about">
+    <img src="Photo (1).jpg" width="150" height="150"class="circular-image">
+<h5>About me</h5>
+<p>I am Gautham Asok. A Btech Second year Computer science student studying in Saintgits Engineering Collage Kottayam. My home town is Kanhangad in Kasaragod district.</p>
+</section>
+<section class="contact">
+    <input type="email" id="mail" placeholder="Your Email">
+    <Button>Click for connecting</Button>
+    <div class="cont">
+        <div class="box">
+            <p>Project 1</p>        
+        </div>
+        <div class="box">
+            <p>Project 2</p>
+        </div>
+    </div>
+</section>
+<footer>
+    <div class="social icons">
+        <a href="https://instagram.com"><img scr="instagram icon.jpeg" alt="intagram"></a>
+        <a href="https://linkedin.com"><img scr="download.png" alt="linkedin"></a>
+                    <a href="https://whatsapp.com"><img scr="986960_whatsapp_icon.png" alt="whatsapp"></a>
+    </div>
+
+</footer>
+<script type="text/javascript">
+  function sendmail(){
+        var email= document.getElementById("mail").value;
+        var subject= "Request to connect-reg";
+        var body= "Hello,I would like to connect with You.";
+        window.location.href ="mailto:"+encodeURIComponent(email)+"?subject=" + encodeURIComponent(subject)+
+        "&body="  + encodeURIComponent(body) + "&cc=gauthamasokpullur@gmail.com";
+}
+</script>
+            </body>
+            </html>
